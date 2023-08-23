@@ -1,3 +1,10 @@
+const username = localStorage.getItem("Username")
+const userEmail = localStorage.getItem("email")
+const userPhone = localStorage.getItem("Contact")
+const user = `<i class="fa-solid fa-user"></i>
+<P>Name: ${username}</P>
+<p>Email: ${userEmail}</p>`
+document.getElementById('user').innerHTML = user
 //Initial References
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
