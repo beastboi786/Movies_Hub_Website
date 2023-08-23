@@ -11,9 +11,9 @@ document.getElementById('login').addEventListener('click',(e) =>{
             console.log(xhr.responseText)
             const userDetail = JSON.parse(xhr.responseText)
             console.log(userDetail)   
-            localStorage.setItem("Username", userDetail.username)
+            localStorage.setItem("Username", userDetail.Username)
             localStorage.setItem("email", userDetail.email)
-            localStorage.setItem("Contact", userDetail.contact)
+            localStorage.setItem("Contact", userDetail.Contact)
             if(pwd==userDetail.password)
             {
                 window.location.href="index.html"
